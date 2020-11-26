@@ -12,11 +12,6 @@ body {
     margin: auto;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-
 hr {
     margin: 2rem 0rem;
 }
@@ -29,7 +24,7 @@ hr {
 .container-center {
     max-width: 600px;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /** links **/
@@ -44,14 +39,14 @@ hr {
 .link-primary {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    color: white
+    color: white;
 }
 
 .link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
-    text-align: center;
+    /* text-align: center; */
 }
 
 /** look into BEM naming convention for CSS **/
@@ -106,7 +101,7 @@ hr {
 }
 
 .hero .hero-heading {
-    text-align: center;
+    /* text-align: center; */
     padding-top: 1rem;
     color: var(--dark-gray);
 }
@@ -119,7 +114,7 @@ hr {
 
 .section {
     padding: 2rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .ow {
@@ -147,4 +142,41 @@ hr {
 
 .footer ul {
     padding-inline-start: 0px;
+}
+
+@media screen and (max-width: 400px) {
+    /* * hero img  */
+    .hero .hero-img {
+        max-width: 225px;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 275px) {
+    /* * hero img  */
+    .hero .hero-img {
+        max-width: 155px;
+        display: block;
+        margin: auto;
+    }
+
+    .container-center {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .link-primary {
+        background-color: var(--primary-color);
+        border-radius: 0.5rem;
+        color: white;
+        display: inline-block;
+    }
+
+    .link-secondary {
+        color: var(--primary-color);
+        border-radius: 0.5rem;
+        border: 1px solid var(--primary-color);
+        display: inline-block;
+    }
 }
