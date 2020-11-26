@@ -12,6 +12,11 @@ body {
     margin: auto;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+
 hr {
     margin: 2rem 0rem;
 }
@@ -24,6 +29,7 @@ hr {
 .container-center {
     max-width: 600px;
     margin: auto;
+    text-align: center;
 }
 
 /** links **/
@@ -113,6 +119,7 @@ hr {
 
 .section {
     padding: 2rem;
+    text-align: center;
 }
 
 .ow {
